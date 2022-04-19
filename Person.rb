@@ -21,7 +21,7 @@ class Person
     end
 
     # setters
-    def setName=(name)
+    def setName = (name)
         @name = name
     end
 
