@@ -1,49 +1,37 @@
 class Person
-    attr_accessor :id, :name, :age, :parent_permission
-    def initialize(name = 'unknown', age, parent_permission = true)
-        @id = id
-        @name = name
-        @age = age
-        @parent_permission = parent_permission
-    end
+  attr_accessor :id, :name, :age
 
-    # getters
-    def getId
-        @id
-    end
-    
-    def getName
-        @name
-    end
+  def initialize(age, name: 'unknown', parent_permission: true)
+    @id = id
+    @name = name
+    @age = age
+    @parent_permission = parent_permission
+  end
 
-    def getAge
-        @age
-    end
+  # getters
+  def getid
+    @id
+  end
 
-    # setters
-    def setName = (name)
-        @name = name
-    end
+  def getname
+    @name
+  end
 
-    def setAge=(age)
-        @age = age
-    end
+  def getage
+    @age
+  end
 
-    # private methods
-    def is_of_age
-        if @age >= 18
-            return true
-        else
-            return false
-        end
-    end
-    private :is_of_age
+  # private methods
+  def of_age
+    @age >= 18
+  end
+  private :is_of_age
 
-    def can_use_services
-        if is_of_age
-            return true
-        else
-            return false
-        end
+  def can_use_services
+    if of_age
+      true
+    else
+      false
     end
+  end
 end
