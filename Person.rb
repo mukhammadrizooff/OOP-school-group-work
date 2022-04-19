@@ -8,7 +8,6 @@ class Person
     @parent_permission = parent_permission
   end
 
-  # getters
   def getid
     @id
   end
