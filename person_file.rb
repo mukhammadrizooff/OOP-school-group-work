@@ -1,8 +1,9 @@
 require_relative 'decorator_file'
+require_relative 'rental_file'
 
 class Person < Nameable
   # setter
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
   # # getter
   attr_reader :id
 
@@ -12,13 +13,13 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
 
   def correct_name
     @name
   end
 
-  # private methods
   def of_age
     @age >= 18
   end
@@ -28,4 +29,8 @@ class Person < Nameable
     is_of_age? || @parent_permission
   end
   public :can_use_services?
+
+  def add_rental(date, book)
+    Rental.new(date, book, self)
+  end
 end
