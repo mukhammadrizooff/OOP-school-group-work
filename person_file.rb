@@ -20,12 +20,12 @@ class Person < Nameable
     @name
   end
 
-  def of_age
+  def of_age?
     @age >= 18
   end
-  private :of_age
+  private :of_age?
 
-  def can_use_services
+  def can_use_services?
     is_of_age? || @parent_permission
   end
   public :can_use_services?

@@ -6,3 +6,5 @@ def main
   patron = []
   options(books, patron, rentals)
 end
+
+main

@@ -3,8 +3,8 @@ require_relative 'person_file'
 class Student < Person
   attr_accessor :classroom
 
-  def initialize(specialization)
-    super(age, name: 'unknown', parent_permission: true)
+  def initialize(age, name, specialization)
+    super(age, name: name)
     @specialization = specialization
   end
 
