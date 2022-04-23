@@ -4,7 +4,7 @@ def main
   books = []
   rentals = []
   patron = []
-  options(books, patron, rentals)
+  options(boooks, patroon, rentals)
 end
 
 main

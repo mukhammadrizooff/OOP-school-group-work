@@ -3,7 +3,7 @@ require_relative 'rental_file'
 require_relative 'teacher_file'
 require_relative 'student_file'
 
-def list_options
+def app_options
   puts 'Welcome to School library App!'
   puts "
     Please choose an option by entering a number:
@@ -18,7 +18,7 @@ end
 
 def options(books, patron, rentals)
   loop do
-    list_options
+    app_options
     option = gets.chomp.to_i
     case option
     when 1
