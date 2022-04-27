@@ -35,6 +35,19 @@ To explore or play with this code you should :
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/dennisakagha/)
 
 
+## Daniel Ufeli
+
+- GitHub: [@danielufeli](https://github.com/danielufeli)
+- Twitter: [@danielufeli](https://twitter.com/danielufeli)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/danielcode)
+
+## Muhammad Rizo Abdunazarov
+
+- GitHub: [@mukhammadrizooff](https://github.com/mukhammadrizooff)
+- Twitter: [@Muhammadrizooff](https://twitter.com/Muhammadrizooff)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mukhammadrizooff/)
+
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!

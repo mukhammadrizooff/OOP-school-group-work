@@ -3,13 +3,13 @@ require_relative 'rental_file'
 
 class Person < Nameable
   # setter
-  attr_accessor :name, :age, :rentals
+  attr_accessor :name, :age, :rentals, :parent_permission
   # # getter
   attr_reader :id
 
-  def initialize(age, name: 'unknown', parent_permission: true)
+  def initialize(age, name: 'unknown', parent_permission: true, id: nil)
     super()
-    @id = rand(1..10_000)
+    @id = id || Random.rand(1..1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
