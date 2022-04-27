@@ -12,6 +12,17 @@ def save_books(books)
   File.write('books.json', JSON.generate(data))
 end
 
+def save_people(people)
+  people_data = []
+  people.each do |person|
+    if person.instance_of?(Teacher)
+      people_data.push({ id: person.id, age: person.age, name: person.name, specialization: person.specialization })
+    elsif person.instance_of?(Student)
+      people_data.push({ id: person.id, age: person.age, name: person.name, parent_permission: person.parent_permission })
+    end
+  end
+  File.write('person.json', JSON.generate(people_data))
+end
 
 
 
