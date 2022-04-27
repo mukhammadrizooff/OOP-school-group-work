@@ -15,8 +15,9 @@ RSpec.describe Rental do
 
   describe 'initialize' do
     it 'Should initialize a rental with a date' do
+      age = 22
       book = Book.new('Harry Potter', 'J.K. Rowling')
-      student = Student.new(name: 'David', parent_permission: true)
+      student = Student.new(age, name: 'David', parent_permission: true)
       rental = Rental.new('20220428', book, student)
       expect(rental.date).to eq('20220428')
     end
@@ -24,8 +25,9 @@ RSpec.describe Rental do
 
   describe 'book' do
     it 'Should return a book' do
+      age = 22
       book = Book.new('Harry Potter', 'J.K. Rowling')
-      student = Student.new(name: 'Dennis', parent_permission: true)
+      student = Student.new(age, name: 'Dennis', parent_permission: true)
       rental = Rental.new('20220428', book, student)
       expect(rental.book).to eq(student)
     end
@@ -33,8 +35,9 @@ RSpec.describe Rental do
 
   describe 'person' do
     it 'Should return a person' do
+      age = 22
       book = Book.new('Harry Potter', 'J.K. Rowling')
-      student = Student.new(name: 'Daniel', parent_permission: true)
+      student = Student.new(age, name: 'Daniel', parent_permission: true)
       rental = Rental.new('20220428', book, student)
       expect(rental.person).to eq(book)
     end
