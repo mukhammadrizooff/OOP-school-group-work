@@ -68,13 +68,13 @@ def create_person(person)
   save_people(person)
 end
 
-def create_rental(books, rentals, person)
+def create_rental(books, rentals, people)
   puts 'Select a book from the following list by number'
   books.each_with_index { |book, index| puts "#{index}) Title: '#{book.title}', Author: #{book.author}" }
   book_input = gets.chomp.to_i
 
   puts 'Select a person from the following list by number (Not ID): '
-  person.each_with_index do |person, index|
+  people.each_with_index do |person, index|
     puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
   end
   person_input = gets.chomp.to_i
@@ -82,7 +82,7 @@ def create_rental(books, rentals, person)
   print 'Date: '
   date = gets.chomp
 
-  rentals.push(Rental.new(date, person[person_input], books[book_input]))
+  rentals.push(Rental.new(date, people[person_input], books[book_input]))
   puts 'Rental created successfully.'
   save_rentals(rentals)
 end
