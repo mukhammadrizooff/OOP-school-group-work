@@ -2,7 +2,7 @@ class Book
   attr_accessor :title, :author
   attr_reader :id
 
-  def initialize(title, author, id:nil)
+  def initialize(title, author, id: nil)
     @id = id || Random.rand(1..1000)
     @title = title
     @author = author
