@@ -39,6 +39,10 @@ end
 def main
   app = App.new
   options(app)
+  books = []
+  rentals = []
+  patron = []
+  options(boooks, patroon, rentals)
 end
 
 main
